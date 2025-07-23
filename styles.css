@@ -91,3 +91,38 @@ body {
   font-weight: 700;
   position: relative;
 }
+
+/* plant section */
+.plant-section {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: center;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.our-plants {
+  text-align: center;
+  font-family: "NotoSerif-Bold", sans-serif;
+  font-size: 50px;
+  font-weight: 700;
+  position: relative;
+  align-self: stretch;
+}
+.our-plants-span {
+  color: #e95a08;
+}
+.our-plants-span2 {
+  color: #000000;
+}
+.plant-text {
+  color: rgba(0, 0, 0, 0.5);
+  text-align: center;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  position: relative;
+  width: 888px;
+}
