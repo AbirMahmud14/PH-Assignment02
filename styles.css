@@ -1,5 +1,6 @@
 /* Global */
 * {
+     background-color: #f0f0f0;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -17,4 +18,76 @@ body {
   padding: 1rem 2rem;
   background-color: #f0f0f0;
   align-items: center;
+  margin: 0px 40px 0px 40px;
+}
+
+.nav-menu {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.nav-menu a, .cart {
+  text-decoration: none;
+  color: #333;
+}
+
+/* Banner */
+.banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+  flex-wrap: wrap;
+  margin: 0px 40px 0px 40px;
+}
+
+.banner-content {
+    display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.side-text {
+  color: rgba(0, 0, 0, 0.5);
+  text-align: left;
+  margin-right: 5rem;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  position: relative;
+  align-self:auto;
+}
+
+.banner-image img {
+  max-width: 100%;
+  height: auto;
+  flex: 1;
+}
+
+.always-fresh {
+  text-align: left;
+  font-family: "NotoSerif-Bold", sans-serif;
+  font-size: 65px;
+  font-weight: 700;
+  position: relative;
+}
+.always-fresh-span {
+  color: #000000;
+}
+.always-fresh-span2 {
+  color: #e95a08;
+}
+
+.flowers {
+  color: #e95a08;
+  text-align: left;
+  font-family: "NotoSerif-Bold", sans-serif;
+  font-size: 65px;
+  font-weight: 700;
+  position: relative;
 }
