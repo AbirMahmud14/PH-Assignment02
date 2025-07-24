@@ -97,15 +97,17 @@ body {
 }
 .always-fresh-span {
   color: #000000;
+   font-family:Georgia, 'Times New Roman', Times, serif;
 }
 .always-fresh-span2 {
   color: #e95a08;
+  font-family:Georgia, 'Times New Roman', Times, serif;
 }
 
 .flowers {
   color: #e95a08;
   text-align: left;
-  font-family: "NotoSerif-Bold", sans-serif;
+  font-family: Georgia, 'Times New Roman', Times, serif;
   font-size: 65px;
   font-weight: 700;
   position: relative;
@@ -397,7 +399,7 @@ font-size: larger;
   background: #e95a08;
   font-size: 1rem;
   font-weight: 600;
-  border-radius: 0 8px 8px 0;
+  border-radius: 0px 8px 8px 0px;
   cursor: pointer;
   transition: background 0.2s;
 }
@@ -519,6 +521,11 @@ font-size: larger;
 
 
 @media (max-width: 600px) {
+
+  .responsive-section {
+    margin: 20px 16px;
+  }
+
   /* Navbar */
      .navbar {
     display: flex;
