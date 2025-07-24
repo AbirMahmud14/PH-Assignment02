@@ -423,14 +423,28 @@ font-size: larger;
 }
 @media (max-width: 600px) {
   .newsletter-form {
-    flex-direction: column;
-    gap: 0.5rem;
+     margin: 40px;
+    gap: 0rem;
   }
-  .newsletter-form input[type="email"], .newsletter-form button {
+  .newsletter-form input[type="email"]{
+     width: 100%;
+    
+  }
+  .newsletter-bg {
+     
+    height: 190px;
+
+  }
+  
+  
+  }
+  
+  .newsletter-form button {
+    
     border-radius: 6px;
-    width: 100%;
+    width: 40%;
   }
-}
+
 
 /* --- Footer Section --- */
 .footer {
@@ -609,7 +623,7 @@ font-size: larger;
     margin: 20px 5px 0 5px;
   }
   .deal-card, .deal-card.large {
-    min-height: 100px;
+    min-height: 190px;
   }
   .deal-discount {
     font-size: 1.1rem;
