@@ -51,6 +51,15 @@ body {
     display: flex;
     justify-items: center;
 }
+.cart-image :hover{
+  color: #c94a06;
+}
+.cart :hover{
+  color: #c94a06;
+}
+.nav-menu :hover{
+  color: #c94a06;
+}
 
 /* Banner */
 .banner {
@@ -191,7 +200,9 @@ font-size: larger;
   width: 100%;
 
 }
-
+.plant-card button:hover {
+  background: #c94a06;
+}
 /* plant lover section */
 
 
@@ -374,20 +385,22 @@ font-size: larger;
   margin-bottom: 2rem;
   background: transparent;
 }
-
+ .button {
+     border-radius: 0px;
+  }
 .newsletter-form {
   display: flex;
   justify-content: center;
   gap: 0;
   max-width: 650px;
-   border-radius: 0 9px 9px 0;
+   border-radius: 0px 9px 9px 0px;
   margin: 0 auto;
 }
 .newsletter-form input[type="email"] {
   
   padding: 0.9rem 1.2rem;
   border: none;
- 
+ border-radius: 0px 9px 9px 0px;
   font-size: 1rem;
   width: 100%;
   outline: none;
@@ -399,9 +412,10 @@ font-size: larger;
   background: #e95a08;
   font-size: 1rem;
   font-weight: 600;
-  border-radius: 0px 8px 8px 0px;
+  border-radius: 0px 9px 9px 0px;
   cursor: pointer;
   transition: background 0.2s;
+ 
 }
 .newsletter-form button:hover {
   background: #c94a06;
@@ -412,7 +426,7 @@ font-size: larger;
     padding: 40px 0 40px 0;
   }
 .newsletter-form{
-  border-radius: 9px;
+  border-radius: 0px 9px 9px 0px;
 }
   .newsletter-bg h2 {
     font-size: 1.5rem;
