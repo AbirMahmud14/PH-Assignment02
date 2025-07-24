@@ -407,14 +407,19 @@ font-size: larger;
 @media (max-width: 600px) {
   .newsletter-bg {
     margin: 0 10px;
-    padding: 40px 0 50px 0;
+    padding: 40px 0 40px 0;
   }
+.newsletter-form{
+  border-radius: 9px;
+}
   .newsletter-bg h2 {
     font-size: 1.5rem;
   }
   .newsletter-form input[type="email"] {
     width: 60%;
+    border-radius: 9px 9px 9px 9px;
   }
+ 
 }
 @media (max-width: 600px) {
   .newsletter-form {
@@ -497,12 +502,6 @@ font-size: larger;
     gap: 1.5rem;
   }
 }
-
-
-
-
-
-
 
 
 @media (max-width: 600px) {
