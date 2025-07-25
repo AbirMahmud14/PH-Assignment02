@@ -61,66 +61,70 @@ body {
   color: #c94a06;
 }
 
-/* Banner */
+/* Banner wrapper */
 .banner {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0rem;
+  margin: 30px 50px 40px 50px;
+ background-color: #f0f0f0;
   flex-wrap: wrap;
-  margin: 0px 50px 0px 50px;
 }
 
+/* Left content */
 .banner-content {
-    display: flex;
-  flex-direction: column;
-  gap: 0px;
-  align-items: flex-start;
-  justify-content: flex-start;
-  align-self: stretch;
-  flex-shrink: 0;
-  position: relative;
+  flex: 1;
+  min-width: 280px;
 }
+
+/* Heading: "ALWAYS FRESH" */
+.always-fresh {
+  font-size: 3.5rem;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: bold;
+  line-height: 1.2;
+  margin-bottom: 0.2rem;
+}
+
+.always-fresh-span {
+  color: #000; /* black */
+}
+
+.always-fresh-span2 {
+  color: #f26522; /* orange */
+  margin-left: 8px;
+}
+
+/* "FLOWERS" line */
+.flowers {
+  font-size: 3.5rem;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: bold;
+  color: #f26522;
+  margin-bottom: 1rem;
+}
+
+/* Paragraph text */
 .side-text {
-  color: rgba(0, 0, 0, 0.5);
-  text-align: left;
-  font-family: "Inter-Regular", sans-serif;
-  font-size: 22px;
-  font-weight: 400;
-  position: relative;
-  align-self:auto;
+  font-size: 1.2rem;
+  color: #555;
+  max-width: 500px;
+  line-height: 1.6;
+}
+
+/* Right image */
+.banner-image {
+  flex: 1;
+  text-align: right;
+  min-width: 280px;
 }
 
 .banner-image img {
   max-width: 100%;
   height: auto;
-  flex: 1;
 }
 
-.always-fresh {
-  text-align: left;
-  font-family: "NotoSerif-Bold", sans-serif;
-  font-size: 65px;
-  font-weight: 700;
-  position: relative;
-}
-.always-fresh-span {
-  color: #000000;
-   font-family:Georgia, 'Times New Roman', Times, serif;
-}
-.always-fresh-span2 {
-  color: #e95a08;
-  font-family:Georgia, 'Times New Roman', Times, serif;
-}
-
-.flowers {
-  color: #e95a08;
-  text-align: left;
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  font-size: 65px;
-  font-weight: 700;
-  position: relative;
-}
+/* Responsive styles */
 
 /* plant section */
 .plant-section {
@@ -205,90 +209,107 @@ font-size: larger;
 }
 /* plant lover section */
 
-
-/* Section layout */
+/* Base layout for plant lover section */
 .plant-lover {
-
   display: flex;
   align-items: flex-start;
   gap: 2rem;
-  margin: 150px 50px 50px 20px;
+  margin: 70px 50px 60px 50px;
+  background-color:#f0f0f0;
   flex-wrap: wrap;
-
 }
 
-/* Image Wrapper */
-.lover-image-wrapper {
-  margin-left: 35px;
-  flex: 1;
-  max-width: 600px;
 
-}
-
-/* Image Container (must be relative) */
+/* Make image relative to hold badge */
 .lover-image {
   position: relative;
-  width: 100%;
-  height: 100%;
 }
 
 .lover-image img:first-child {
-  width: 100%;
+  width: 590px;
   height: auto;
   display: block;
-  
 }
 
-/* Trusted Badge Positioned Center Top */
+/* Trusted badge on top-center of image */
 .trusted-badge {
   position: absolute;
-  top: -90px;
-  right: -30%;
+  top: -60px;
+  left: 96%;
   transform: translateX(-50%);
-  width: 180px;
-  height: 180px;
+  width: 150px;
+  height: 150px;
+  animation: spin 5s linear infinite;
   z-index: 10;
   background: transparent;
 }
 
-/* Text Content */
+/* Right side text content */
 .lover-content {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-  display: block;
-  margin-left: 30px;
-  min-width: 400px;
- 
+  flex: 1;
+  min-width: 300px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: #222;
+  font-weight: 400;
 }
 
 .lover-content h2 {
-  font-size: 3.4rem;
+  font-size: 3.5rem;
+  font-weight: bold;
   margin-bottom: 1rem;
-  
 }
 
 .lover-content ul {
   list-style: disc;
   padding-left: 1.5rem;
-  color: #555;
-  font-size: 1.25rem;
-  font-weight: 400;
+  font-size: 1.5rem;
+  color: #444;
 }
 
 .lover-content li {
   margin-bottom: 1rem;
+  line-height: 1.5;
 }
 
-/* Mobile */
+/* Spin animation for the badge */
+@keyframes spin {
+  from {
+    transform: translateX(-50%) rotate(0deg);
+  }
+  to {
+    transform: translateX(-50%) rotate(360deg);
+  }
+}
+
+/* Mobile responsiveness */
 @media (max-width: 768px) {
+
+  .lover-image img:first-child {
+  width: 100%;
+  height: auto;
+  display: block;
+}
   .plant-lover {
     flex-direction: column;
-    margin: 20px;
+    margin: 20px 16px;
   }
 
   .trusted-badge {
     display: none;
   }
+
+  .lover-content h2 {
+    font-size: 2rem;
+    text-align: left;
+  }
+
+  .lover-content ul {
+    font-size: 1rem;
+    padding-left: 1.2rem;
+  }
 }
+
+
 
 
 
@@ -297,7 +318,7 @@ font-size: larger;
 .deals-section {
   display: flex;
   gap: 2rem;
-  margin: 40px 60px 0 60px;
+  margin: 60px 60px 0 60px;
 }
 .deals-cards {
   display: flex;
@@ -353,6 +374,9 @@ font-size: larger;
    color: #f0f0f0;
   background: transparent;
    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.deal-shop:hover {
+  color: #ff5900;
 }
 @media (max-width: 900px) {
   .deals-section {
